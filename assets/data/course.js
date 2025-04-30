@@ -51,8 +51,7 @@ export const courses = [
         id: 1,
         title: 'Chương 1: Số học',
         description: 'Giới thiệu về các khái niệm cơ bản trong số học.',
-        type: 'text',
-        content: `Số học là một nhánh của toán học nghiên cứu về các số và các phép toán cơ bản như cộng, trừ, nhân, chia. Các khái niệm quan trọng bao gồm:
+        textContent: `Số học là một nhánh của toán học nghiên cứu về các số và các phép toán cơ bản như cộng, trừ, nhân, chia. Các khái niệm quan trọng bao gồm:
 
 1. Số tự nhiên: 0, 1, 2, 3, ...
 2. Số nguyên: ..., -2, -1, 0, 1, 2, ...
@@ -69,13 +68,29 @@ Các tính chất quan trọng:
 - Tính giao hoán: a + b = b + a
 - Tính kết hợp: (a + b) + c = a + (b + c)
 - Tính phân phối: a × (b + c) = a × b + a × c`,
+        videoUrl: 'https://www.youtube.com/watch?v=math101',
       },
       {
         id: 2,
         title: 'Chương 2: Đại số',
-        description: 'Chương 2 là môn học quan trọng trong chương trình giáo dục phổ thông.',
-        type: 'video',
-        content: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        description: 'Tìm hiểu về biểu thức đại số và phương trình.',
+        textContent: `Đại số là một phần quan trọng của toán học, nghiên cứu về cấu trúc, quan hệ và số lượng. Trong chương này, chúng ta sẽ tìm hiểu:
+
+1. Biểu thức đại số:
+- Định nghĩa và ví dụ
+- Các phép toán với biểu thức đại số
+- Rút gọn biểu thức
+
+2. Phương trình:
+- Phương trình bậc nhất
+- Phương trình bậc hai
+- Hệ phương trình
+
+3. Bất phương trình:
+- Bất phương trình bậc nhất
+- Bất phương trình bậc hai
+- Hệ bất phương trình`,
+        videoUrl: 'https://www.youtube.com/watch?v=algebra101',
       },
     ],
   },
@@ -92,8 +107,7 @@ Các tính chất quan trọng:
         id: 1,
         title: 'Chương 1: Động học',
         description: 'Giới thiệu về chuyển động của vật thể.',
-        type: 'text',
-        content: `Động học là một phần quan trọng của vật lý học, nghiên cứu về chuyển động của vật thể mà không quan tâm đến nguyên nhân gây ra chuyển động. Các khái niệm cơ bản bao gồm:
+        textContent: `Động học là một phần quan trọng của vật lý học, nghiên cứu về chuyển động của vật thể mà không quan tâm đến nguyên nhân gây ra chuyển động. Các khái niệm cơ bản bao gồm:
 
 1. Vị trí và độ dịch chuyển:
 - Vị trí: Điểm xác định vị trí của vật trong không gian
@@ -106,19 +120,31 @@ Các tính chất quan trọng:
 3. Các loại chuyển động:
 - Chuyển động thẳng đều
 - Chuyển động thẳng biến đổi đều
-- Chuyển động tròn đều
-
-Công thức cơ bản:
-- Vận tốc trung bình: v = Δx/Δt
-- Gia tốc trung bình: a = Δv/Δt
-- Phương trình chuyển động: x = x₀ + v₀t + ½at²`,
+- Chuyển động tròn đều`,
+        videoUrl: 'https://www.youtube.com/watch?v=physics101',
       },
       {
         id: 2,
         title: 'Chương 2: Động lực học',
         description: 'Tìm hiểu về lực và ảnh hưởng của nó đến chuyển động.',
-        type: 'video',
-        content: 'https://www.youtube.com/watch?v=example1',
+        textContent: `Động lực học nghiên cứu mối quan hệ giữa lực tác dụng và chuyển động của vật. Nội dung chính bao gồm:
+
+1. Các định luật Newton:
+- Định luật I: Quán tính
+- Định luật II: Lực và gia tốc
+- Định luật III: Tác dụng và phản tác dụng
+
+2. Các loại lực cơ bản:
+- Lực hấp dẫn
+- Lực ma sát
+- Lực đàn hồi
+- Lực điện từ
+
+3. Ứng dụng:
+- Chuyển động ném
+- Chuyển động tròn
+- Va chạm`,
+        videoUrl: 'https://www.youtube.com/watch?v=physics102',
       },
     ],
   },
@@ -135,8 +161,7 @@ Công thức cơ bản:
         id: 1,
         title: 'Chương 1: Cấu tạo nguyên tử',
         description: 'Tìm hiểu về cấu trúc cơ bản của nguyên tử.',
-        type: 'text',
-        content: `Nguyên tử là đơn vị cơ bản của vật chất, có cấu tạo gồm:
+        textContent: `Nguyên tử là đơn vị cơ bản của vật chất, có cấu tạo gồm:
 
 1. Hạt nhân:
 - Proton: Mang điện tích dương (+1)
@@ -151,19 +176,30 @@ Công thức cơ bản:
 3. Các đặc điểm quan trọng:
 - Số hiệu nguyên tử (Z): Số proton trong hạt nhân
 - Số khối (A): Tổng số proton và neutron
-- Đồng vị: Các nguyên tử cùng nguyên tố nhưng khác số neutron
-
-4. Mô hình nguyên tử:
-- Mô hình Rutherford
-- Mô hình Bohr
-- Mô hình hiện đại (mô hình lượng tử)`,
+- Đồng vị: Các nguyên tử cùng nguyên tố nhưng khác số neutron`,
+        videoUrl: 'https://www.youtube.com/watch?v=chemistry101',
       },
       {
         id: 2,
         title: 'Chương 2: Liên kết hóa học',
         description: 'Khám phá cách các nguyên tử liên kết với nhau.',
-        type: 'video',
-        content: 'https://www.youtube.com/watch?v=example2',
+        textContent: `Liên kết hóa học là lực liên kết giữa các nguyên tử trong phân tử. Các loại liên kết chính:
+
+1. Liên kết ion:
+- Hình thành giữa kim loại và phi kim
+- Chuyển giao electron
+- Lực tĩnh điện
+
+2. Liên kết cộng hóa trị:
+- Hình thành giữa các phi kim
+- Dùng chung electron
+- Có thể phân cực hoặc không phân cực
+
+3. Liên kết kim loại:
+- Hình thành trong kim loại
+- Biển electron tự do
+- Tính dẫn điện và dẫn nhiệt`,
+        videoUrl: 'https://www.youtube.com/watch?v=chemistry102',
       },
     ],
   },
