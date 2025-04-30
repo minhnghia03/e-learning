@@ -1,5 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import BackButton from 'components/BackButton';
 import { ResizeMode, Video } from 'expo-av';
 import { View, Text, ScrollView, TouchableOpacity, Dimensions, SafeAreaView } from 'react-native';
 import { ArrowLeftIcon, ClockIcon } from 'react-native-heroicons/outline';
@@ -39,7 +40,7 @@ export default function ChapterDetailScreen({ route }: ChapterDetailScreenProps)
 
   const navigateToChapter = (targetIndex: number) => {
     if (course.chapters && targetIndex >= 0 && targetIndex < course.chapters.length) {
-      navigation.replace('ChapterDetail', {
+      navigation.navigate('ChapterDetail', {
         chapter: course.chapters[targetIndex],
         course,
         chapterIndex: targetIndex,
@@ -51,11 +52,12 @@ export default function ChapterDetailScreen({ route }: ChapterDetailScreenProps)
   return (
     <View className="flex-1 bg-white">
       {/* Header */}
-      <SafeAreaView className="z-10 bg-white">
+      <SafeAreaView className="bg-white">
         <View className="h-16 flex-row items-center px-4">
-          <TouchableOpacity onPress={() => navigation.goBack()} className="p-2">
-            <ArrowLeftIcon size={24} color="#374151" />
-          </TouchableOpacity>
+          <View className="z-10">
+            <BackButton />
+          </View>
+
           <Text
             className="-ml-8 flex-1 text-center text-lg font-medium text-gray-800"
             numberOfLines={1}>
@@ -65,10 +67,12 @@ export default function ChapterDetailScreen({ route }: ChapterDetailScreenProps)
       </SafeAreaView>
 
       {/* Video Section - Outside ScrollView for full width */}
-      <View style={{ height: videoHeight }} className="w-full bg-white">
+      <View className="w-full bg-white" style={{ height: videoHeight, width: '100%' }}>
         {chapter.videoUrl ? (
           <Video
-            source={{ uri: chapter.videoUrl }}
+            source={{
+              uri: chapter.videoUrl,
+            }}
             rate={1.0}
             volume={1.0}
             isMuted={false}

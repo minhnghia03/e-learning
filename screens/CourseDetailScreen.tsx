@@ -1,5 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import BackButton from 'components/BackButton';
 import { View, Text, Image, ScrollView, TouchableOpacity, FlatList } from 'react-native';
 import { ArrowLeftIcon, BookOpenIcon, ClockIcon } from 'react-native-heroicons/outline';
 
@@ -38,11 +39,7 @@ export default function CourseDetailScreen({ route }: CourseDetailScreenProps) {
       onPress={() =>
         navigation.navigate('ChapterDetail', {
           chapter: item,
-          course: {
-            id: course.id,
-            name: course.name,
-            title: course.title,
-          },
+          course,
           chapterIndex: index,
           totalChapters: course.chapters?.length || 0,
         })
@@ -62,11 +59,9 @@ export default function CourseDetailScreen({ route }: CourseDetailScreenProps) {
         {/* Header Image */}
         <View className="relative h-56">
           <Image source={{ uri: course.thumbnail }} className="h-full w-full" resizeMode="cover" />
-          <TouchableOpacity
-            onPress={() => navigation.goBack()}
-            className="absolute left-4 top-12 rounded-full bg-white/30 p-2 backdrop-blur-md">
-            <ArrowLeftIcon size={24} color="white" />
-          </TouchableOpacity>
+          <View className="absolute left-4 top-12">
+            <BackButton />
+          </View>
         </View>
 
         {/* Course Info */}

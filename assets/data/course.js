@@ -68,7 +68,8 @@ Các tính chất quan trọng:
 - Tính giao hoán: a + b = b + a
 - Tính kết hợp: (a + b) + c = a + (b + c)
 - Tính phân phối: a × (b + c) = a × b + a × c`,
-        videoUrl: 'https://www.youtube.com/watch?v=math101',
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
@@ -90,7 +91,8 @@ Các tính chất quan trọng:
 - Bất phương trình bậc nhất
 - Bất phương trình bậc hai
 - Hệ bất phương trình`,
-        videoUrl: 'https://www.youtube.com/watch?v=algebra101',
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -121,7 +123,8 @@ Các tính chất quan trọng:
 - Chuyển động thẳng đều
 - Chuyển động thẳng biến đổi đều
 - Chuyển động tròn đều`,
-        videoUrl: 'https://www.youtube.com/watch?v=physics101',
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
@@ -144,7 +147,8 @@ Các tính chất quan trọng:
 - Chuyển động ném
 - Chuyển động tròn
 - Va chạm`,
-        videoUrl: 'https://www.youtube.com/watch?v=physics102',
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -177,7 +181,8 @@ Các tính chất quan trọng:
 - Số hiệu nguyên tử (Z): Số proton trong hạt nhân
 - Số khối (A): Tổng số proton và neutron
 - Đồng vị: Các nguyên tử cùng nguyên tố nhưng khác số neutron`,
-        videoUrl: 'https://www.youtube.com/watch?v=chemistry101',
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
@@ -199,7 +204,8 @@ Các tính chất quan trọng:
 - Hình thành trong kim loại
 - Biển electron tự do
 - Tính dẫn điện và dẫn nhiệt`,
-        videoUrl: 'https://www.youtube.com/watch?v=chemistry102',
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -216,8 +222,7 @@ Các tính chất quan trọng:
         id: 1,
         title: 'Chương 1: Tế bào học',
         description: 'Giới thiệu về cấu trúc và chức năng của tế bào.',
-        type: 'text',
-        content: `Tế bào là đơn vị cơ bản của sự sống, có cấu tạo phức tạp và đa dạng:
+        textContent: `Tế bào là đơn vị cơ bản của sự sống, có cấu tạo phức tạp và đa dạng:
 
 1. Cấu trúc tế bào:
 - Màng tế bào: Bao bọc và bảo vệ tế bào
@@ -240,13 +245,27 @@ Các tính chất quan trọng:
 4. Phân loại tế bào:
 - Tế bào nhân sơ (Prokaryote)
 - Tế bào nhân thực (Eukaryote)`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
         title: 'Chương 2: Di truyền học',
         description: 'Tìm hiểu về cơ chế di truyền và biến dị.',
-        type: 'video',
-        content: 'https://www.youtube.com/watch?v=example3',
+        textContent: `Di truyền học là một phần quan trọng của sinh học, nghiên cứu về cơ chế di truyền và biến dị. Nội dung chính bao gồm:
+
+1. Cơ chế di truyền:
+- ADN: Vật chất di truyền
+- Nhiễm sắc thể: Cấu trúc vật chất di truyền
+- Quá trình nhân đôi ADN
+- Quá trình phiên mã và dịch mã
+- Quá trình sao mã và dịch mã
+
+2. Biến dị:
+- Đột biến
+- Biến dị tổ hợp`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -261,14 +280,36 @@ Các tính chất quan trọng:
       {
         id: 1,
         title: 'Chương 1: Văn học dân gian',
-        type: 'text',
-        content: 'Tìm hiểu về ca dao, tục ngữ và truyện dân gian.',
+        description: 'Tìm hiểu về ca dao, tục ngữ và truyện dân gian.',
+        textContent: `Văn học dân gian là nền tảng của văn học Việt Nam, bao gồm:
+
+1. Ca dao:
+- Tục ngữ: Câu nói ngắn gọn, ý nghĩa sâu sắc
+- Truyện dân gian: Câu chuyện truyền miệng, thường có nhiều tầng ý nghĩa
+
+2. Tục ngữ:
+- Câu nói ngắn gọn, ý nghĩa sâu sắc
+- Truyền miệng qua đời
+- Có nhiều tầng ý nghĩa
+
+3. Truyện dân gian:
+- Câu chuyện truyền miệng`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
         title: 'Chương 2: Văn học hiện đại',
-        type: 'text',
-        content: 'Khám phá các tác phẩm văn học hiện đại.',
+        description: 'Khám phá các tác phẩm văn học hiện đại.',
+        textContent: `Văn học hiện đại là nền tảng của văn học Việt Nam, bao gồm:
+
+1. Tác phẩm văn học:
+- Tác phẩm văn học: Câu chuyện truyền miệng, thường có nhiều tầng ý nghĩa
+
+2. Tác phẩm văn học:
+- Câu chuyện truyền miệng`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -284,14 +325,28 @@ Các tính chất quan trọng:
       {
         id: 1,
         title: 'Chapter 1: Basic Conversation',
-        type: 'video',
-        content: 'Learn everyday English conversations.',
+        description: 'Learn everyday English conversations.',
+        textContent: `English Communication là khóa học giúp bạn cải thiện kỹ năng nói và nghe tiếng Anh. Nội dung chính bao gồm:
+
+1. Basic Conversation:
+- Learn everyday English conversations
+- Practice basic English grammar
+- Improve pronunciation`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
         title: 'Chapter 2: Grammar Essentials',
-        type: 'text',
-        content: 'Master essential English grammar rules.',
+        description: 'Master essential English grammar rules.',
+        textContent: `English Grammar là khóa học giúp bạn cải thiện kỹ năng viết tiếng Anh. Nội dung chính bao gồm:
+
+1. Basic Grammar:
+- Learn essential English grammar rules
+- Practice basic English grammar
+- Improve writing skills`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -306,14 +361,30 @@ Các tính chất quan trọng:
       {
         id: 1,
         title: 'Chương 1: Giới thiệu Python',
-        type: 'text',
-        content: 'Làm quen với ngôn ngữ lập trình Python.',
+        description: 'Làm quen với ngôn ngữ lập trình Python.',
+        textContent: `Python là ngôn ngữ lập trình phổ biến và mạnh mẽ, thường được sử dụng trong các lĩnh vực như:
+
+1. Web Development:
+- Tạo các ứng dụng web
+- Xây dựng các trang web với HTML, CSS và JavaScript
+- Tạo các ứng dụng web
+- Xây dựng các trang web với HTML, CSS và JavaScript`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
         title: 'Chương 2: Cấu trúc điều khiển',
-        type: 'video',
-        content: 'Học về if-else, vòng lặp và hàm.',
+        description: 'Học về if-else, vòng lặp và hàm.',
+        textContent: `Python có cấu trúc điều khiển phong phú, bao gồm:
+
+1. If-else:
+- Kiểm tra điều kiện
+- Thực hiện các câu lệnh tùy theo điều kiện
+- Thực hiện các câu lệnh tùy theo điều kiện
+- Thực hiện các câu lệnh tùy theo điều kiện`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },
@@ -328,14 +399,28 @@ Các tính chất quan trọng:
       {
         id: 1,
         title: 'Chương 1: Thời kỳ đựng nước',
-        type: 'text',
-        content: 'Lịch sử Việt Nam từ thời Hùng Vương.',
+        description: 'Lịch sử Việt Nam từ thời Hùng Vương.',
+        textContent: `Lịch sử Việt Nam từ thời Hùng Vương:
+
+1. Thời kỳ đựng nước:
+- Lịch sử Việt Nam từ thời Hùng Vương
+- Lịch sử Việt Nam từ thời Hùng Vương
+- Lịch sử Việt Nam từ thời Hùng Vương`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
       {
         id: 2,
         title: 'Chương 2: Thời kỳ độc lập',
-        type: 'video',
-        content: 'Các triều đại phong kiến độc lập.',
+        description: 'Các triều đại phong kiến độc lập.',
+        textContent: `Lịch sử Việt Nam từ thời Hùng Vương:
+
+1. Thời kỳ độc lập:
+- Lịch sử Việt Nam từ thời Hùng Vương
+- Lịch sử Việt Nam từ thời Hùng Vương
+- Lịch sử Việt Nam từ thời Hùng Vương`,
+        videoUrl:
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       },
     ],
   },

@@ -52,7 +52,7 @@ export default function HomeScreen() {
   return (
     <View className="flex-1 bg-white">
       <View className="p-4">
-        <View className="mb-4 flex-row items-center">
+        <View className="mb-4 flex-row items-center pt-8">
           {showCourseList && (
             <TouchableOpacity onPress={handleBack} className="mr-3">
               <ArrowLeftIcon size={24} color="#374151" />
