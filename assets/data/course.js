@@ -44,7 +44,8 @@ export const courses = [
     categoryId: 1,
     title: 'Toán học cơ bản',
     description: 'Toán học cơ bản là môn học quan trọng trong chương trình giáo dục phổ thông.',
-    thumbnail: 'https://via.placeholder.com/150',
+    thumbnail:
+      'https://img.freepik.com/free-vector/hand-drawn-mathematics-background_23-2148157868.jpg',
     chapters: [
       {
         id: 1,
@@ -71,7 +72,7 @@ Các tính chất quan trọng:
       },
       {
         id: 2,
-        title: 'Chương 2',
+        title: 'Chương 2: Đại số',
         description: 'Chương 2 là môn học quan trọng trong chương trình giáo dục phổ thông.',
         type: 'video',
         content: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
@@ -84,7 +85,8 @@ Các tính chất quan trọng:
     categoryId: 2,
     title: 'Vật lý đại cương',
     description: 'Vật lý đại cương giúp học sinh hiểu về các quy luật cơ bản của tự nhiên.',
-    thumbnail: 'https://via.placeholder.com/150',
+    thumbnail:
+      'https://img.freepik.com/free-vector/hand-drawn-physics-background_23-2148157867.jpg',
     chapters: [
       {
         id: 1,
@@ -126,7 +128,8 @@ Công thức cơ bản:
     categoryId: 3,
     title: 'Hóa học cơ sở',
     description: 'Hóa học cơ sở giúp học sinh hiểu về cấu tạo và tính chất của vật chất.',
-    thumbnail: 'https://via.placeholder.com/150',
+    thumbnail:
+      'https://img.freepik.com/free-vector/hand-drawn-chemistry-background_23-2148157866.jpg',
     chapters: [
       {
         id: 1,
@@ -170,7 +173,8 @@ Công thức cơ bản:
     categoryId: 4,
     title: 'Sinh học đại cương',
     description: 'Sinh học đại cương giúp học sinh hiểu về sự sống và các quá trình sinh học.',
-    thumbnail: 'https://via.placeholder.com/150',
+    thumbnail:
+      'https://img.freepik.com/free-vector/hand-drawn-biology-background_23-2148157869.jpg',
     chapters: [
       {
         id: 1,
@@ -207,6 +211,95 @@ Công thức cơ bản:
         description: 'Tìm hiểu về cơ chế di truyền và biến dị.',
         type: 'video',
         content: 'https://www.youtube.com/watch?v=example3',
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Ngữ văn',
+    categoryId: 5,
+    title: 'Văn học Việt Nam',
+    description: 'Khám phá nền văn học Việt Nam qua các tác phẩm kinh điển.',
+    thumbnail: 'https://img.freepik.com/free-photo/close-up-desk-with-books_23-2148157870.jpg',
+    chapters: [
+      {
+        id: 1,
+        title: 'Chương 1: Văn học dân gian',
+        type: 'text',
+        content: 'Tìm hiểu về ca dao, tục ngữ và truyện dân gian.',
+      },
+      {
+        id: 2,
+        title: 'Chương 2: Văn học hiện đại',
+        type: 'text',
+        content: 'Khám phá các tác phẩm văn học hiện đại.',
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Tiếng Anh',
+    categoryId: 8,
+    title: 'English Communication',
+    description: 'Improve your English speaking and listening skills.',
+    thumbnail:
+      'https://img.freepik.com/free-vector/hand-drawn-english-background_23-2148157871.jpg',
+    chapters: [
+      {
+        id: 1,
+        title: 'Chapter 1: Basic Conversation',
+        type: 'video',
+        content: 'Learn everyday English conversations.',
+      },
+      {
+        id: 2,
+        title: 'Chapter 2: Grammar Essentials',
+        type: 'text',
+        content: 'Master essential English grammar rules.',
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: 'Tin học',
+    categoryId: 9,
+    title: 'Lập trình cơ bản',
+    description: 'Học lập trình với Python cho người mới bắt đầu.',
+    thumbnail: 'https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148157872.jpg',
+    chapters: [
+      {
+        id: 1,
+        title: 'Chương 1: Giới thiệu Python',
+        type: 'text',
+        content: 'Làm quen với ngôn ngữ lập trình Python.',
+      },
+      {
+        id: 2,
+        title: 'Chương 2: Cấu trúc điều khiển',
+        type: 'video',
+        content: 'Học về if-else, vòng lặp và hàm.',
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: 'Lịch sử',
+    categoryId: 6,
+    title: 'Lịch sử Việt Nam',
+    description: 'Tìm hiểu về lịch sử Việt Nam qua các thời kỳ.',
+    thumbnail: 'https://img.freepik.com/free-photo/old-scroll-ancient-map_23-2148157873.jpg',
+    chapters: [
+      {
+        id: 1,
+        title: 'Chương 1: Thời kỳ đựng nước',
+        type: 'text',
+        content: 'Lịch sử Việt Nam từ thời Hùng Vương.',
+      },
+      {
+        id: 2,
+        title: 'Chương 2: Thời kỳ độc lập',
+        type: 'video',
+        content: 'Các triều đại phong kiến độc lập.',
       },
     ],
   },

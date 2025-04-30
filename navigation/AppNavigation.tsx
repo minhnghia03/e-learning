@@ -5,6 +5,8 @@ import React from 'react';
 import { Image } from 'react-native';
 
 import { images } from '../assets';
+import CourseDetailScreen from '../screens/CourseDetailScreen';
+import ChapterDetailScreen from '../screens/ChapterDetailScreen';
 import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
@@ -17,11 +19,21 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Welcome">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" options={{ headerShown: false }} component={BottomTabNavigator} />
         <Stack.Screen name="Welcome" options={{ headerShown: false }} component={WelcomeScreen} />
         <Stack.Screen name="SignIn" options={{ headerShown: false }} component={LoginScreen} />
         <Stack.Screen name="SignUp" options={{ headerShown: false }} component={SignUpScreen} />
+        <Stack.Screen
+          name="CourseDetail"
+          options={{ headerShown: false }}
+          component={CourseDetailScreen as React.ComponentType<any>}
+        />
+        <Stack.Screen
+          name="ChapterDetail"
+          options={{ headerShown: false }}
+          component={ChapterDetailScreen as React.ComponentType<any>}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
