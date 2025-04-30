@@ -2,24 +2,22 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Image } from 'react-native';
+import { HomeIcon, HeartIcon, CogIcon } from 'react-native-heroicons/outline';
 
-import { images } from '../assets';
-import CourseDetailScreen from '../screens/CourseDetailScreen';
 import ChapterDetailScreen from '../screens/ChapterDetailScreen';
+import CourseDetailScreen from '../screens/CourseDetailScreen';
 import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import { themeColors } from '../theme';
-
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Welcome">
         <Stack.Screen name="Home" options={{ headerShown: false }} component={BottomTabNavigator} />
         <Stack.Screen name="Welcome" options={{ headerShown: false }} component={WelcomeScreen} />
         <Stack.Screen name="SignIn" options={{ headerShown: false }} component={LoginScreen} />
@@ -39,7 +37,6 @@ export default function AppNavigation() {
   );
 }
 
-const { streamIcon, classWorkIcon, exploreIcon } = images;
 const extraTabOptions = {
   tabBarLabelStyle: { fontFamily: 'exo' },
   tabBarStyle: { borderTopRightRadius: 12, borderTopLeftRadius: 12 },
@@ -48,69 +45,36 @@ const extraTabOptions = {
 };
 function BottomTabNavigator() {
   return (
-    <Tab.Navigator initialRouteName="Explore">
+    <Tab.Navigator initialRouteName="Trang chủ">
       <Tab.Screen
-        name="Explore"
+        name="Trang chủ"
         component={HomeScreen}
         options={{
           headerShown: false,
           tabBarIcon(props) {
-            return (
-              // Custom tab bar icon
-              <Image
-                source={exploreIcon}
-                style={{
-                  tintColor: props.color,
-                  width: props.size,
-                  height: props.size,
-                }}
-                {...props}
-              />
-            );
+            return <HomeIcon size={props.size} color={props.color} />;
           },
           ...extraTabOptions,
         }}
       />
       <Tab.Screen
-        name="Stream"
+        name="Yêu thích"
         component={HomeScreen}
         options={{
           headerShown: false,
           tabBarIcon(props) {
-            return (
-              // Custom tab bar icon
-              <Image
-                source={streamIcon}
-                style={{
-                  tintColor: props.color,
-                  width: props.size,
-                  height: props.size,
-                }}
-                {...props}
-              />
-            );
+            return <HeartIcon size={props.size} color={props.color} />;
           },
           ...extraTabOptions,
         }}
       />
       <Tab.Screen
-        name="Classwork"
+        name="Cài đặt"
         component={HomeScreen}
         options={{
           headerShown: false,
           tabBarIcon(props) {
-            return (
-              // Custom tab bar icon
-              <Image
-                source={classWorkIcon}
-                style={{
-                  tintColor: props.color,
-                  width: props.size,
-                  height: props.size,
-                }}
-                {...props}
-              />
-            );
+            return <CogIcon size={props.size} color={props.color} />;
           },
           ...extraTabOptions,
         }}
