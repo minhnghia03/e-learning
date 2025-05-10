@@ -20,13 +20,13 @@
 npm install -g expo-cli
 ```
 
-3. Cài đặt các dependencies:
+2. Cài đặt các dependencies:
 
 ```bash
 npm install
 ```
 
-4. Khởi chạy ứng dụng:
+3. Khởi chạy ứng dụng:
 
 ```bash
 npm start
