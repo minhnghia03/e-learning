@@ -11,6 +11,7 @@ import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import { themeColors } from '../theme';
+import SettingsScreen from '../screens/SettingsScreen';
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
@@ -70,7 +71,7 @@ function BottomTabNavigator() {
       />
       <Tab.Screen
         name="Cài đặt"
-        component={HomeScreen}
+        component={SettingsScreen}
         options={{
           headerShown: false,
           tabBarIcon(props) {
