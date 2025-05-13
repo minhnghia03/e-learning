@@ -12,6 +12,7 @@ import SignUpScreen from '../screens/SignUpScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import { themeColors } from '../theme';
 import SettingsScreen from '../screens/SettingsScreen';
+import FavoritesScreen from '../screens/FavoritesScreen';
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
@@ -60,7 +61,7 @@ function BottomTabNavigator() {
       />
       <Tab.Screen
         name="Yêu thích"
-        component={HomeScreen}
+        component={FavoritesScreen}
         options={{
           headerShown: false,
           tabBarIcon(props) {

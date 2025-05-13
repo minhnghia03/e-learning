@@ -3,14 +3,18 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 interface AppSettingsContextType {
   fontSize: number;
   setFontSize: (size: number) => void;
+  favoriteCourses: number[];
+  setFavoriteCourses: (ids: number[]) => void;
 }
 
 const AppSettingsContext = createContext<AppSettingsContextType | undefined>(undefined);
 
 export function AppSettingsProvider({ children }: { children: ReactNode }) {
   const [fontSize, setFontSize] = useState<number>(16);
+  const [favoriteCourses, setFavoriteCourses] = useState<number[]>([]);
   return (
-    <AppSettingsContext.Provider value={{ fontSize, setFontSize }}>
+    <AppSettingsContext.Provider
+      value={{ fontSize, setFontSize, favoriteCourses, setFavoriteCourses }}>
       {children}
     </AppSettingsContext.Provider>
   );
